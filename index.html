@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Canvas Game</title>
+  <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+
+  <!--第一幕-->
+  <div class="state_0 state">
+    <canvas id="GameStart"></canvas>
+    <div class="start">
+      <p>前端攻城獅保衛戰</p>
+      <p class="btn">挑戰六角獸!</p>
+    </div>
+  </div>
+  <!--第二幕-->
+  <div class="state_1 state">
+    <canvas id="GamePlay"></canvas>
+    <!-- <div class="backhome">
+      <p>- 回首頁 -</p>
+    </div> -->
+    <div class="control">
+      <div class="shop">
+        <p>商店</p>
+      </div>
+      <div class="pause">
+        <p>暫停</p>
+      </div>
+    </div>
+    <div class="guide">
+      <p>操作說明：按住滑鼠左鍵或w發射子彈。</p>
+    </div>
+  </div>
+  <!--第三幕-->
+  <div class="state_2 state">
+    <canvas id="GameOver"></canvas>
+    <div class="back">
+      <p class="btn">
+        <a href="index.html">再玩一次</a>
+      </p>
+      <div class="info">
+          <p>作者：icguanyu（練習作品W7）
+            <a href="https://github.com/icguanyu" target="_blank">Github</a>｜
+            <a href="https://codepen.io/icguanyu/" target="_blank">Codepen</a>
+          </p>
+          <p>特別感謝：六角學院-前端修練精神時光屋／吳哲宇(老師)大大</p>
+        </div>
+    </div>
+    
+  </div>
+</body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src="js/libs/vector.js"></script>
+<script src="js/libs/DrawStart.js"></script>
+<script src="js/libs/DrawPlay.js"></script>
+<script src="js/libs/DrawOver.js"></script>
+<script src="js/draw.js"></script>
+
+</html>
